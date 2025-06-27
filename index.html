@@ -1,98 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    <header class="container site-header">
-    
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                <img class="logo" src="images/jkn-logo.jpg" alt="JustKiddingNews Logo">
-                JustKiddingNews
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JKN</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    News
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">US & Canada</a></li>
-                                    <li><a class="dropdown-item" href="#">Asia</a></li>
-                                    <li><a class="dropdown-item" href="#">Africa</a></li>
-                                    <li><a class="dropdown-item" href="#">Australia</a></li>
-                                    <li><a class="dropdown-item" href="#">Europe</a></li>
-                                    <li><a class="dropdown-item" href="#">Latin America</a></li>
-                                    <li><a class="dropdown-item" href="#">Middle East</a></li>
-                                    <li><a class="dropdown-item" href="#">UK</a></li>
-                                    
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Business</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sport</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Politics</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Health</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Entertainment</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tech</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="news-layout">
+      <header class="container-fluid site-header">
+        <div class="hero-item">
+          <img
+            class="hero-img"
+            src="assests/jkn-banner.jpeg"
+            alt="JustKiddingNews Banner"
+          />
+        </div>
     </header>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="logo"
+            src="assests/jkn-logo.jpg"
+            alt="JustKiddingNews Logo"
+          />
+          JustKiddingNews
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JKN</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  News
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">US & Canada</a></li>
+                  <li><a class="dropdown-item" href="#">Asia</a></li>
+                  <li><a class="dropdown-item" href="#">Africa</a></li>
+                  <li><a class="dropdown-item" href="#">Australia</a></li>
+                  <li><a class="dropdown-item" href="#">Europe</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Latin America</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Middle East</a></li>
+                  <li><a class="dropdown-item" href="#">UK</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sport</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Politics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entertainment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tech</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <aside class="container trending"></aside>
 
-    <aside class="container ad">
+      <main class="container-fluid main">
+        <div class="box box-1">
+          <div class="card mb-3">
+            <img
+              src="assests/yamaha-v4.webp"
+              class="card-img-top"
+              alt="Yamaha's V4 Engine"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Yamaha's V4 Engine Soon to Enter MotoGP
+              </h5>
+              <p class="card-text">It's not a matter of if, but when.</p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated May 20, 2025</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box box-2">
+          <div class="card mb-3">
+            <img
+              src="assests/100men-vs-gorilla.png"
+              class="card-img-top"
+              alt="100 Men vs. 1 Gorilla"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                100 Men vs. 1 Gorilla
+              </h5>
+              <p class="card-text">The debate that has divided the science community.</p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box box-3">
+          <div class="card mb-3">
+            <img
+              src="assests/rimworld-odyssey.webp"
+              class="card-img-top"
+              alt="RimWorld Odyssey and update 1.6"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                RimWorld Odyssey and Update 1.6
+              </h5>
+              <p class="card-text">Odyssey and update 1.6 will release in 1 month.</p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 2 weeks ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box box-4">
+          <div class="card mb-3">
+            <img
+              src="assests/one-punch-man.webp""
+              class="card-img-top"
+              alt="Yamaha's V4 Engine"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                One Punch Man Season 3
+              </h5>
+              <p class="card-text">One Punch Man Season 3 is officially scheduled for release in October 2025.</p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated March 6, 2025</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
 
-    </aside>
+      <aside class="container categories">
+        <div class="box politics">
 
-    <main class="container main">
+        </div>
+        <div class="box sports">
 
-    </main>
+        </div>
+        <div class="box tech">
 
-    <aside class="container live-updates">
+        </div>
+      </aside>
 
-    </aside>
-
-    <footer class="container site-footer">
-
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+      <footer class="container-fluid site-footer">
+        <p class="copyright text-center">&copy; 2025 JustKiddingNews. All rights reserved. This site is for Entertainment purposes only.</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
