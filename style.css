@@ -21,10 +21,33 @@
 
 .site-header {
     grid-area: header;
+    background-color: #D6DBD2;
+
 }
 
 .card {
     background-color: #F2F5EA;
+}
+
+.btn {
+    background-color: #E75A7C;
+}
+
+.btn:hover {
+    background-color: #BBC7A4;
+}
+
+.offcanvas {
+    background-color: #2C363F;
+     color: #F2F5EA;
+}
+
+.offcanvas .nav-link:hover {
+    color: #E75A7C;
+}
+
+.dropdown-menu {
+    background-color: #E75A7C;
 }
 
 .navbar {
@@ -34,6 +57,7 @@
     top: 0;
     z-index: 1000;
     background-color: #D6DBD2;
+    padding-left: 0.5vw;
 }
 
 .trending {
@@ -41,6 +65,10 @@
     background-color: #2C363F; 
     color: #F2F5EA;  
     padding: 2vw;
+}
+
+.card-title-trending {
+    color: #E75A7C;
 }
 
 .main {
@@ -113,7 +141,7 @@
         "categories"
         "footer"
         ;
-        grid-template-rows: 0.1fr 0.05fr 1fr 1fr 1fr 0.1fr;
+        grid-template-rows: 0.1fr 0.05fr 0.6fr 0.4fr 0.4fr 0.1fr;
     }
 }
 
