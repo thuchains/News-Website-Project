@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Playfair Display", serif;
 }
 
 .logo{
@@ -18,7 +21,10 @@
 
 .site-header {
     grid-area: header;
-    border: 3px solid pink;
+}
+
+.card {
+    background-color: #F2F5EA;
 }
 
 .navbar {
@@ -27,26 +33,27 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #D6DBD2;
 }
 
 .trending {
-    grid-area: trending;
-    border: 3px solid pink;
-    
+    grid-area: trending; 
+    background-color: #2C363F; 
+    color: #F2F5EA;  
+    padding: 2vw;
 }
 
 .main {
     grid-area: main; 
-    border: 3px solid pink;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-color: #D6DBD2;
 }
 
 .box {
     display: flex;
-    border: 3px solid pink;
     flex: 1 1 calc(40%);    
     box-sizing: border-box;
     min-width: 250px;
@@ -65,15 +72,17 @@
 }
 
 .categories {
-    grid-area: categories; 
-    border: 3px solid pink;
-    
+    grid-area: categories;   
+    background-color: #BBC7A4;  
+}
+
+.politics, .sports, .tech {
+    padding: 2vh;
 }
 
 .site-footer {
-    grid-area: footer;  
-    border: 3px solid pink;
-    
+    grid-area: footer;      
+    background-color: #D6DBD2;
 }
 
 @media (min-width: 768px) {
