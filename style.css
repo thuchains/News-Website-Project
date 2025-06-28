@@ -159,6 +159,8 @@ a:hover {
 .copyright {
     color: #D6DBD2;
     margin-top: 7vh;
+    letter-spacing: 0.1rem;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
